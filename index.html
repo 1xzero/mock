@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Academy | Elevate Your Soft Skills</title>
+    <meta name="description" content="Modern Soft Skills Academy offering premium courses in leadership, communication, and emotional intelligence.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts: Inter for ultra-clean tech UI, Syne for modern professional headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">NEXUS<span class="accent-dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#courses" class="btn-primary-sm">Explore Courses</a>
+    </nav>
+
+    <!-- 1. Home Section -->
+    <header id="home" class="section hero">
+        <div class="hero-content fade-up">
+            <span class="eyebrow">MASTER YOUR INTERPERSONAL POWER</span>
+            <h1 class="hero-title">SHARPEN THE SKILLS THAT <span class="gradient-text">MATTER.</span></h1>
+            <p class="hero-subtitle">Unlock your professional potential with premium, high-impact soft skills training tailored for modern leaders and innovators.</p>
+            <div class="hero-actions">
+                <a href="#courses" class="btn-primary">Browse Academy</a>
+                <a href="#about" class="btn-secondary">Our Philosophy</a>
+            </div>
+        </div>
+        <div class="hero-visual fade-up">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600" alt="Academy Workspace Workshop">
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. About Section -->
+    <section id="about" class="section grid-layout">
+        <div class="section-header fade-up">
+            <h2 class="section-title">THE ACADEMY</h2>
+        </div>
+        <div class="section-content fade-up">
+            <p class="lead-text">We bridge the gap between technical expertise and human brilliance.</p>
+            <p class="body-text">At Nexus, we believe that high-impact communication, adaptive leadership, and deep emotional intelligence are the core drivers of modern career growth. Our curriculum is strictly interactive, eliminating traditional lectures for immersive, real-world skill acquisition.</p>
+        </div>
+    </section>
+
+    <!-- 3. Courses Section (With Active Search Functionality) -->
+    <section id="courses" class="section">
+        <div class="courses-header fade-up">
+            <div>
+                <h2 class="section-title">POPULAR CURRICULUM</h2>
+                <h1 class="display-heading">EXPLORE OUR COURSES</h1>
+            </div>
+            <!-- Dynamic Search Bar -->
+            <div class="search-container">
+                <input type="text" id="courseSearch" placeholder="Search topics (e.g. Leadership, Time)...">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+
+        <div class="courses-grid" id="coursesGrid">
+            <!-- Course 1 -->
+            <div class="course-card fade-up" data-title="high-impact leadership & team building">
+                <div class="course-badge">Leadership</div>
+                <h3>High-Impact Leadership</h3>
+                <p>Master directional influence, conflict resolution, and the architecture of building high-performance teams.</p>
+                <div class="course-footer">
+                    <span class="duration">⏱️ 6 Weeks</span>
+                    <a href="#contact" class="course-link">Inquire &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card fade-up" data-title="strategic communication mastery">
+                <div class="course-badge">Communication</div>
+                <h3>Strategic Communication</h3>
+                <p>Advance your executive presence, persuasive storytelling, and master the art of data-backed professional pitching.</p>
+                <div class="course-footer">
+                    <span class="duration">⏱️ 4 Weeks</span>
+                    <a href="#contact" class="course-link">Inquire &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card fade-up" data-title="emotional intelligence for executives eq">
+                <div class="course-badge">Psychology</div>
+                <h3>Emotional Intelligence (EQ)</h3>
+                <p>Develop deep self-awareness, social empathy, and mental resilience tools to thrive under high-pressure environments.</p>
+                <div class="course-footer">
+                    <span class="duration">⏱️ 5 Weeks</span>
+                    <a href="#contact" class="course-link">Inquire &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="course-card fade-up" data-title="agile time management productivity">
+                <div class="course-badge">Productivity</div>
+                <h3>Agile Time Management</h3>
+                <p>Optimize daily workflows using advanced prioritization frameworks and sustainable deep-work scheduling mechanisms.</p>
+                <div class="course-footer">
+                    <span class="duration">⏱️ 3 Weeks</span>
+                    <a href="#contact" class="course-link">Inquire &rarr;</a>
+                </div>
+            </div>
+        </div>
+        <div id="noResults" class="no-results hidden">No courses match your search criteria.</div>
+    </section>
+
+    <!-- 4. Trainers Section -->
+    <section id="trainers" class="section">
+        <div class="fade-up text-center-mobile">
+            <h2 class="section-title">THE FACULTY</h2>
+            <h1 class="display-heading">MEET OUR LEAD INSTRUCTORS</h1>
+        </div>
+        <div class="trainers-grid">
+            <!-- Trainer 1 -->
+            <div class="trainer-card fade-up">
+                <div class="trainer-avatar">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400" alt="Dr. Sarah Jenkins">
+                </div>
+                <div class="trainer-info">
+                    <h4>Dr. Sarah Jenkins</h4>
+                    <span class="trainer-role">Executive Leadership Coach</span>
+                    <p>Former behavioral researcher with 12+ years optimizing C-suite team dynamics globally.</p>
+                </div>
+            </div>
+
+            <!-- Trainer 2 -->
+            <div class="trainer-card fade-up">
+                <div class="trainer-avatar">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400" alt="Coach Ahmed Rayan">
+                </div>
+                <div class="trainer-info">
+                    <h4>Coach Ahmed Rayan</h4>
+                    <span class="trainer-role">Communication Specialist</span>
+                    <p>Keynote speaker and expert in non-verbal communication and behavioral negotiation frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact" class="section form-section">
+        <div class="form-container fade-up">
+            <h2 class="form-title">ACADEMY INQUIRIES</h2>
+            <p class="form-subtitle">Have questions about corporate training or personal enrollment? Drop your message below.</p>
+            
+            <form id="academyForm" class="academy-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="interest">Course of Interest</label>
+                    <select id="interest" required>
+                        <option value="" disabled selected>Select a curriculum...</option>
+                        <option value="leadership">High-Impact Leadership</option>
+                        <option value="communication">Strategic Communication</option>
+                        <option value="eq">Emotional Intelligence (EQ)</option>
+                        <option value="time">Agile Time Management</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="4" required placeholder="Tell us about your learning goals..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary btn-block">SUBMIT ADMISSION REQUEST</button>
+                <div id="formSuccess" class="success-msg hidden">Thank you! Your admission inquiry has been routed to our staff.</div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="nav-brand">NEXUS<span class="accent-dot">.</span></div>
+            <p>&copy; 2026 Nexus Soft-Skills Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
